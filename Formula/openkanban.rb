@@ -5,21 +5,21 @@
 class Openkanban < Formula
   desc "TUI kanban board for orchestrating AI coding agents"
   homepage "https://github.com/divineblu/openkanban"
-  version "0.0.2"
+  version "0.0.3"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/divineblu/openkanban/releases/download/v0.0.2/openkanban_0.0.2_darwin_amd64.tar.gz"
-      sha256 "3ca442dc49b51a8e987f0435304b976c61947f707abb7ebf606bf18f76416ebc"
+      url "https://github.com/divineblu/openkanban/releases/download/v0.0.3/openkanban_0.0.3_darwin_amd64.tar.gz"
+      sha256 "a93d7cd291a568d981a44c633ef622170b7a017ed3d81e8b3a14db63ee6d8241"
 
       define_method(:install) do
         bin.install "openkanban"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/divineblu/openkanban/releases/download/v0.0.2/openkanban_0.0.2_darwin_arm64.tar.gz"
-      sha256 "09fe582029c175e1df900c5c06790d6ebddaf3d60defdf9034331f84c0e46b20"
+      url "https://github.com/divineblu/openkanban/releases/download/v0.0.3/openkanban_0.0.3_darwin_arm64.tar.gz"
+      sha256 "d98dc1941020c81df3b84a3bd3df80be189ec6705a193753c5068afa2b9bb6b6"
 
       define_method(:install) do
         bin.install "openkanban"
@@ -29,15 +29,15 @@ class Openkanban < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/divineblu/openkanban/releases/download/v0.0.2/openkanban_0.0.2_linux_amd64.tar.gz"
-      sha256 "76a6f513a04e92af6333c37c7a95c3c99597cb3d260d689e932d69a7158ff4c7"
+      url "https://github.com/divineblu/openkanban/releases/download/v0.0.3/openkanban_0.0.3_linux_amd64.tar.gz"
+      sha256 "efa4b2eee5f1ce8c738a239b35f7b44ea5e2ceaaaabb6395764a059146d92e42"
       define_method(:install) do
         bin.install "openkanban"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/divineblu/openkanban/releases/download/v0.0.2/openkanban_0.0.2_linux_arm64.tar.gz"
-      sha256 "4eecf946546933ffcebc511126d964a3a95b23ef43274fdafaaab4aa9b3d83a6"
+      url "https://github.com/divineblu/openkanban/releases/download/v0.0.3/openkanban_0.0.3_linux_arm64.tar.gz"
+      sha256 "bb71da14f3665bb9515aae32d6350490606ac6f7d1cc6f4d42b9dad3e0598c88"
       define_method(:install) do
         bin.install "openkanban"
       end
